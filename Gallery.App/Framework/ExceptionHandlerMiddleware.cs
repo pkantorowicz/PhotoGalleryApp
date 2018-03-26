@@ -38,9 +38,6 @@ namespace Gallery.App.Framework
                     statusCode = HttpStatusCode.Unauthorized;
                     break;
                 case Exception e when exceptionType == typeof(Exception):
-                    statusCode = HttpStatusCode.BadRequest;
-                    break;
-                case Exception e when exceptionType == typeof(Exception):
                     statusCode = HttpStatusCode.InternalServerError;
                     break;
             }
